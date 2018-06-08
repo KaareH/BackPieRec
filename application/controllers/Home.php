@@ -5,7 +5,12 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-        echo "Test";
-		//$this->load->view('welcome_message');
+		$data = array();
+		$data['recordings'] = array();
+		$files = glob('data/*.{wav}', GLOB_BRACE);
+		foreach($files as $file) {
+			$data['recordings'][] = $file;
+		}
+		$this->load->view('home', $data);
 	}
 }
