@@ -11,18 +11,30 @@
     <link href="/resources/libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-    .container {
-        width: auto;
-        max-width: 680px;
-        padding: 0 15px;
-    }
+        .container {
+            width: auto;
+            max-width: 680px;
+        }
     </style>
 
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
+        <div class="row pt-3">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Recorder</h3>
+                    </div>
+                    <div class="card-body control-buttons">
+                        <button type="button" class="start-button btn btn-success">Record</button>
+                        <button type="button" class="stop-button btn btn-danger">Stop</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-3">
             <div class="col-12">
                 <table class="table">
                     <thead>
@@ -45,5 +57,10 @@
             </div>
         </div>
     </div>
+    <script src="/resources/libraries/jquery/jquery.min.js"></script>
+    <script src="/resources/libraries/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/resources/libraries/underscore/underscore-min.js"></script>
+    <script src="/resources/libraries/backbone.js/backbone-min.js"></script>
+    <script src="/resources/js/home.js"></script>
 </body>
 </html>
