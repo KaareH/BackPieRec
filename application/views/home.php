@@ -28,8 +28,8 @@
                         <h3>Recorder</h3>
                     </div>
                     <div class="card-body control-buttons">
-                        <button type="button" class="start-button btn btn-success">Record</button>
-                        <button type="button" class="stop-button btn btn-danger">Stop</button>
+                        <button disabled type="button" class="start-button btn btn-success">Record</button>
+                        <button disabled type="button" class="stop-button btn btn-danger">Stop</button>
                     </div>
                 </div>
             </div>
