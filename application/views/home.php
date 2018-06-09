@@ -47,7 +47,7 @@
                     <tbody>
                         <?php foreach ($recordings as $file) {?>
                         <tr>
-                            <td><?=$file?></td>
+                            <td><a href="/<?=$file?>"><?=$file?></a></td>
                             <td><?=number_format(filesize($file)/1024/1024, 2, '.', ' ')?></td>
                             <td></td>
                         </tr>
